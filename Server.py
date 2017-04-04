@@ -5,6 +5,9 @@ HTTP Server to receive change stat in a cs go game
 
 from BaseHTTPServer import BaseHTTPRequestHandler, HTTPServer
 import config
+import json
+import stats
+
 
 class reqHandler(BaseHTTPRequestHandler):
     def _set_headers(self):
@@ -22,8 +25,15 @@ class reqHandler(BaseHTTPRequestHandler):
         # Doesn't do anything with posted data
         content_length = int(self.headers['Content-Length'])  # <--- Gets the size of data
         post_data = self.rfile.read(content_length)  # <--- Gets the data itself
-        if post_data['map']
-        print post_data  # <-- Print post data
+        isCompet = False
+        post_data = json.loads(post_data)
+        for key, val in post_data.items():
+            if key == 'map':
+                for key_map, val_map in val.items():
+                    if key_map == 'mode' and val_map == 'competitive':
+                        isCompet = True
+                    if key_map == 'phase' and val_map == 'gameover' and isCompet:
+                        stats.ParserStat(post_data).write_in_file()
         self._set_headers()
 
 
