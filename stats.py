@@ -8,5 +8,5 @@ class ParserStat:
 
     def write_in_file(self):
         name_file = datetime.datetime.strftime(datetime.datetime.now(), '%Y-%m-%d_%Hh%M')
-        log = open(name_file, 'w')
-        log.write(self.data)
+        log = open(name_file, 'aw')
+        log.write(str(self.data))
