@@ -27,13 +27,8 @@ class reqHandler(BaseHTTPRequestHandler):
         post_data = self.rfile.read(content_length)  # <--- Gets the data itself
         isCompet = False
         post_data = json.loads(post_data)
-        for key, val in post_data.items():
-            if key == 'map':
-                for key_map, val_map in val.items():
-                    if key_map == 'mode' and val_map == 'competitive':
-                        isCompet = True
-                    #if key_map == 'phase' and val_map == 'gameover' and isCompet:
-                    stats.ParserStat(post_data).write_in_file()
+        stats.ParserStat(post_data)
+
         self._set_headers()
 
 
