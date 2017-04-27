@@ -1,0 +1,41 @@
+{
+  "player":
+  {
+    "name": "Yupin #AH !",
+    "steamid": "76561197983772073",
+    "activity": "playing",
+    "state": {
+      "equip_value": 3300, "armor": 0, "flashed": 0,
+      "round_killhs": 1,
+      "burning": 0,
+      "money": 5350, "smoked": 0, "health": 100,
+      "round_kills": 5,
+      "helmet": false},
+    "observer_slot": 6,
+    "weapons": {
+      "weapon_1": {"name": "weapon_usp_silencer", "type": "Pistol", "ammo_clip_max": 12, "ammo_clip": 12, "state": "holstered", "ammo_reserve": 24, "paintkit": "cu_usp_progressiv"},
+      "weapon_0": {"state": "holstered", "name": "weapon_knife_flip", "paintkit": "so_purple", "type": "Knife"},
+      "weapon_2": {"name": "weapon_m4a1", "type": "Rifle", "ammo_clip_max": 30, "ammo_clip": 26, "state": "active", "ammo_reserve": 58, "paintkit": "gs_m4a4_pioneer"}},
+    "team": "CT",
+    "match_stats": {
+      "score": 218,
+      "kills": 73,
+      "assists": 0,
+      "mvps": 16,
+      "deaths": 0}},
+  "added": {"round": {"win_team": true}},
+  "map": {
+    "name": "de_mirage",
+    "mode": "competitive",
+    "team_ct": {"score": 16},
+    "round": 17,
+    "phase": "gameover",
+    "team_t": {"score": 1}},
+  "round": {"win_team": "CT", "phase": "over"},
+  "provider": {"steamid": "76561197983772073", "name": "Counter-Strike: Global Offensive", "version": 13576, "appid": 730, "timestamp": 1493194520},
+  "previously": {
+    "round": {"phase": "live"},
+    "player": {"state": {"round_kills": 4, "money": 1800}, "weapons": {"weapon_2": {"ammo_reserve": 81, "ammo_clip": 8}},
+      "match_stats": {"kills": 72, "score": 216, "mvps": 15}},
+    "map": {"round": 16, "phase": "live", "team_ct": {"score": 15}}}
+}

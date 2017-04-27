@@ -24,11 +24,11 @@ class reqHandler(BaseHTTPRequestHandler):
     def do_POST(self):
         # Doesn't do anything with posted data
         content_length = int(self.headers['Content-Length'])  # <--- Gets the size of data
-        post_data = self.rfile.read(content_length)  # <--- Gets the data itself
-        isCompet = False
-        post_data = json.loads(post_data)
-        stats.ParserStat(post_data)
-
+        post_data = self.rfile.read(content_length)
+           # self.rfile.read(content_length)  # <--- Gets the data itself
+        #print(post_data)
+        #print(str(post_data, 'utf-8'))
+        stats.ParserStat().parse_data(str(post_data, 'utf-8'))
         self._set_headers()
 
 

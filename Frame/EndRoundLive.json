@@ -1,0 +1,34 @@
+{
+  "round": {
+    "bomb": "exploded",
+    "win_team": "T",
+    "phase": "over"},
+  "player": {
+    "name": "Yupin #AH !",
+    "steamid": "76561197983772073",
+    "activity": "playing",
+    "state": {
+      "equip_value": 200,
+      "armor": 0,
+      "flashed": 0,
+      "round_killhs": 5,
+      "burning": 0,
+      "money": 3700,
+      "smoked": 0,
+      "health": 0,
+      "round_kills": 5,
+      "helmet": false},
+    "observer_slot": 6,
+    "weapons": {},
+    "team": "CT",
+    "match_stats": {
+      "score": 208, "kills": 68, "assists": 0, "mvps": 15, "deaths": 0}},
+  "map": {
+    "name": "de_mirage",
+    "mode": "competitive",
+    "team_ct": {"score": 15},
+    "round": 16,
+    "phase": "live",
+    "team_t": {"score": 1}},
+  "provider": {"steamid": "76561197983772073", "name": "Counter-Strike: Global Offensive", "version": 13576, "appid": 730, "timestamp": 1493194457},
+  "previously": {"map": {"team_t": {"score": 0}}}}

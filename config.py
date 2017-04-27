@@ -1,7 +1,8 @@
 #Steam conf
 Steam = {
     'api_key': 'DCD21CECC47186974E1718ED8B6EDD2B',
-    'player_id': ['76561197983772073', '76561198375089587']
+    'yupin_id': '76561197983772073',
+    'smurf_id': '76561198375089587'
 }
 
 #Server conf
